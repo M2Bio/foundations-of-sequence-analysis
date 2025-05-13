@@ -1,0 +1,1642 @@
+<classes>
+<class name="list">
+  <method name="create">
+    <call>l = list()</call>
+    <endesc>
+    create a new empty list in variable \lstinline!l!
+    </endesc>
+    <dedesc>
+    erzeuge eine neue leere Liste in Variable \lstinline!l!
+    </dedesc>
+  </method>
+  <method name="len">
+    <call>len(l)</call>
+    <endesc>
+    deliver length of list \lstinline!l!
+    </endesc>
+    <dedesc>
+    bestimme die L"ange der Liste \lstinline!l!
+    </dedesc>
+  </method>
+  <method name="sum">
+    <call>sum(l)</call>
+    <endesc>
+    deliver sum of elements of list \lstinline!l! with numeric values
+    </endesc>
+    <dedesc>
+    bestimme die Summe der Elemente der Liste \lstinline!l! mit numerischen Werten
+    </dedesc>
+  </method>
+  <method name="join">
+    <call>sep.join(slist)</call>
+    <endesc>
+    concat.\ list \lstinline!slist! of strings with separator
+    \lstinline!sep! to one string
+    </endesc>
+    <dedesc>
+    f"uge Liste \lstinline!slist! von Strings mit Separator
+    \lstinline!sep! zu einem String zusammen
+    </dedesc>
+  </method>
+  <method name="append">
+    <call>l.append(e)</call>
+    <endesc>
+    add element \lstinline!e! to end of list \lstinline!l!
+    </endesc>
+    <dedesc>
+    f"uge Element \lstinline!e! an das Ende der Liste \lstinline!l!
+    </dedesc>
+  </method>
+  <method name="pop">
+    <call>l.pop()</call>
+    <endesc>
+    delete elem.\ at end of list \lstinline!l! and return deleted elem.
+    </endesc>
+    <dedesc>
+    l"osche Element am Ende der Liste \lstinline!l! und liefere es als
+    return-Wert
+    </dedesc>
+  </method>
+  <method name="slice">
+    <call>l[i:j]</call>
+    <endesc>
+    get slice of list \lstinline!l! from index \lstinline!i! to index
+    \lstinline!j-1!
+    </endesc>
+    <dedesc>
+    extrahiere den Teil der Liste \lstinline!l! von Index \lstinline!i!
+    bis Index \lstinline!j-1!
+    </dedesc>
+  </method>
+  <method name="enumerate">
+    <call>enumerate(l)</call>
+    <endesc>
+    enumerate the indexes and elements of list \lstinline!l!
+    </endesc>
+    <dedesc>
+    z"ahle die Indizes und Elemente der Liste \lstinline!l! auf
+    </dedesc>
+  </method>
+
+  <method name="insertstart">
+    <call>l.insert(0,e)</call>
+    <endesc>
+    put element \lstinline!e! at beginning of list \lstinline!l!
+    </endesc>
+    <dedesc>
+    f"uge \lstinline!e! am Anfang der Liste \lstinline!l! ein
+    </dedesc>
+  </method>
+  <method name="popstart">
+    <call>l.pop(0)</call>
+    <endesc>
+    delete elem.\ at beginning of list \lstinline!l! and return deleted elem.
+    </endesc>
+    <dedesc>
+    l"osche Element am Anfang der Liste \lstinline!l! und liefere es als
+    return-Wert
+    </dedesc>
+  </method>
+  <method name="insert">
+    <call>l.insert(i,e)</call>
+    <endesc>
+    insert (in-place) element \lstinline!e! after position \lstinline!i! in
+    list \lstinline!l!
+    </endesc>
+    <dedesc>
+    f"uge Element \lstinline!e! nach Position \lstinline!i! in Liste
+    \lstinline!l! ein
+    </dedesc>
+  </method>
+
+  <method name="string2list">
+    <call>list('pfn1')</call>
+    <endesc>
+    return list of characters of given string
+    </endesc>
+    <dedesc>
+    liefere die Liste der Zeichen im gegeben String
+    </dedesc>
+  </method>
+
+  <method name="reverselist">
+    <call>l.reverse()</call>
+    <endesc>
+    reverse order of elements in list \lstinline!l!
+    </endesc>
+    <dedesc>
+    kehre die Reihenfolge der Elemente in Liste \lstinline!l! um
+    </dedesc>
+  </method>
+
+</class>
+<class name="string">
+  <method name="len">
+    <call>len(s)</call>
+    <endesc>
+    deliver number of elements in string \lstinline!s!
+    </endesc>
+    <dedesc>
+    bestimme die Anzahl der Elemente im String \lstinline!s!
+    </dedesc>
+  </method>
+  <method name="slice">
+    <call>s[i:j]</call>
+    <endesc>
+    get slice of string \lstinline!s! from index \lstinline!i! to index
+    \lstinline!j-1!
+    </endesc>
+    <dedesc>
+    liefere Substring von String \lstinline!s! von Index \lstinline!i! bis
+    \lstinline!j-1!
+    </dedesc>
+  </method>
+  <method name="split">
+    <call>s.split(sep)</call>
+    <endesc>
+    split string \lstinline!s! at the given separator into list of strings
+    </endesc>
+    <dedesc>
+    Spalte String \lstinline!s! am Separator \lstinline!sep! in eine Liste
+    von Strings
+    </dedesc>
+  </method>
+  <method name="rstrip">
+    <call>s.rstrip()</call>
+    <endesc>
+    remove trailing white spaces from string
+    </endesc>
+    <dedesc>
+    l"osche Leerzeichen am Ende von String
+    </dedesc>
+  </method>
+  <method name="lstrip">
+    <call>s.lstrip()</call>
+    <endesc>
+    remove leading white spaces from string
+    </endesc>
+    <dedesc>
+    l"osche Leerzeichen am Anfang von String
+    </dedesc>
+  </method>
+  <method name="strip">
+    <call>s.strip()</call>
+    <endesc>
+    remove leading and trailing white spaces from string
+    </endesc>
+    <dedesc>
+    l"osche Leerzeichen am Anfang und Ende von String
+    </dedesc>
+  </method>
+  <method name="format">
+    <call>'a{}c'.format(s)</call>
+    <endesc>
+    substitute string \lstinline!s! for place holder \lstinline!{}!
+    </endesc>
+    <dedesc>
+    Substituiere den String \lstinline!s! f"ur den Platzhalter \lstinline!{}!
+    </dedesc>
+  </method>
+  <method name="maketrans">
+    <call>str.maketrans(x,y)</call>
+    <endesc>
+    create translation table mapping elements in \lstinline!x! to elements in
+    \lstinline!y!
+    </endesc>
+    <dedesc>
+    erzeuge "Ubersetzungstabelle, die die Elemente von \lstinline!x! auf
+    Elemente von \lstinline!y! abbildet
+    </dedesc>
+  </method>
+  <method name="translate">
+    <call>s.translate(t)</call>
+    <endesc>
+    apply translation table \lstinline!t! to string \lstinline!s!
+    </endesc>
+    <dedesc>
+    Wende die "Ubersetzungstabelle \lstinline!t! auf den String \lstinline!s! an
+    </dedesc>
+  </method>
+  <method name="startswith">
+    <call>s.startswith('Date ')</call>
+    <endesc>
+    return \lstinline!True! iff string \lstinline!s! has prefix \texttt{Date}.
+    </endesc>
+    <dedesc>
+    Liefere \lstinline!True! zur"uck gdw.\ String \lstinline!s! hat den
+    Pr"afix \texttt{Date}.
+    </dedesc>
+  </method>
+  <method name="endswith">
+    <call>s.endswith('.docx')</call>
+    <endesc>
+    return \lstinline!True! iff string \lstinline!s! has suffix \texttt{.docx}.
+    </endesc>
+    <dedesc>
+    Liefere \lstinline!True! zur"uck gdw.\ String \lstinline!s! hat den
+    Suffix \texttt{.docx}.
+    </dedesc>
+  </method>
+</class>
+
+<class name="regexp">
+
+  <method name="sub">
+    <call>re.sub(r'...',rep,s)</call>
+    <endesc>
+    replace all substrings in \lstinline!s! matching RE by \lstinline!rep!
+    </endesc>
+    <dedesc>
+    Ersetze alle Substrings in \lstinline!s!, die den RE matchen, durch
+    \lstinline!rep!
+    </dedesc>
+  </method>
+
+  <method name="search">
+    <call>re.search(r'...',s)</call>
+    <endesc>
+    search for occurrences of RE in string \lstinline!s!,
+    return match object
+    </endesc>
+    <dedesc>
+    Suche Vorkommen von RE im String \lstinline!s!,
+    liefert match object zur"uck
+    </dedesc>
+  </method>
+
+  <method name="findall">
+    <call>re.findall(r'...',s)</call>
+    <endesc>
+      Return all non-overlapping matches of pattern in string, as a list of
+      strings. The string is scanned left-to-right, and matches are returned
+      in the order found. If one or more groups are present in the pattern,
+      return a list of groups; this will be a list of tuples if the pattern
+      has more than one group. Empty matches are included in the result.
+    </endesc>
+    <dedesc>
+       Liefere alle nicht-"uberlappenden Treffer des RE im gegebenen String
+       s als eine Liste von Strings.
+    </dedesc>
+  </method>
+
+  <method name="finditer">
+    <call>re.finditer(r'...',s)</call>
+    <endesc>
+       Return an iterator yielding match objects over all non-overlapping
+       matches for the RE in string. The string is scanned left-to-right,
+       and matches are returned in the order found. Empty matches are
+       included in the result.
+    </endesc>
+    <dedesc>
+       Liefere Iterator der Match-Objekte aller nicht-"uberlappender Treffer
+       des RE im gegebenen String. Der String wird von links nach rechts
+       gescannt und die Treffer werden in der Reihenfolge geliefert, in der sie
+       gefunden werden. Leere Treffer sind Teil des Ergebnisses.
+    </dedesc>
+  </method>
+</class>
+
+<class name="dict">
+  <method name="create">
+    <call>d = dict()</call>
+    <endesc>
+    create a new empty dictionary
+    </endesc>
+    <dedesc>
+    erzeuge ein neues leeres Dictionary
+    </dedesc>
+  </method>
+  <method name="access">
+    <call>d[k]</call>
+    <endesc>
+    lookup key \lstinline!k! in dictionary \lstinline!d!
+    </endesc>
+    <dedesc>
+    liefere den Wert f"ur Schl"ussel \lstinline!k! im Dictionary \lstinline!d!
+    </dedesc>
+  </method>
+  <method name="member">
+    <call>if k in d:</call>
+    <endesc>
+    test if key \lstinline!k! is in dictionary \lstinline!d!
+    </endesc>
+    <dedesc>
+    Teste, ob der Schl"ussel \lstinline!k! im Dictionary \lstinline!d! vorkommt
+    </dedesc>
+  </method>
+  <method name="update">
+    <call>d[k] = v</call>
+    <endesc>
+    add key value pair \lstinline!k!/\lstinline!v! to dictionary \lstinline!d!;
+    if value for key \lstinline!k! already exists, then overwrite current value
+    </endesc>
+    <dedesc>
+    f"uge Schl"ussel/Wertpaar \lstinline!k!/\lstinline!v! in das Dictionary
+    \lstinline!d! ein; falls Schl"ussel \lstinline!k! bereits existiert,
+    "uberschreibe den bisherigen Wert
+    </dedesc>
+  </method>
+  <method name="listkeys">
+    <call>list(d.keys())</call>
+    <endesc>
+    return list of keys of dictionary \lstinline!d! in arbitrary order
+    </endesc>
+    <dedesc>
+    liefere Liste der Schl"ussel des Dictionaries \lstinline!d! in beliebiger
+    Ordnung
+    </dedesc>
+  </method>
+  <method name="listvalues">
+    <call>list(d.values())</call>
+    <endesc>
+    return list of values of dictionary \lstinline!d! in arbitrary order
+    </endesc>
+    <dedesc>
+    liefere Liste der Werte des Dictionaries \lstinline!d! in beliebiger Ordnung
+    </dedesc>
+  </method>
+  <method name="listitems">
+    <call>list(d.items())</call>
+    <endesc>
+    return list of key/value pairs of dictionary \lstinline!d! in arbitrary
+    order
+    </endesc>
+    <dedesc>
+    liefere Liste der Schl"ussel/Wertpaare des Dictionaries \lstinline!d! in
+    beliebiger Reihefolge
+    </dedesc>
+  </method>
+</class>
+<class name="os">
+  <method name="environment">
+    <call>os.environ[varname]</call>
+    <endesc>
+      return value of environment variable varname
+    </endesc>
+    <dedesc>
+      liefere Wert einer Umgebungs-Variable varname
+    </dedesc>
+  </method>
+  <method name="path.basename">
+    <call>os.path.basename(filename)</call>
+    <endesc>
+      return basename of filename
+    </endesc>
+    <dedesc>
+      liefere basename des angegebenen Dateinamens
+    </dedesc>
+  </method>
+  <method name="path.abspath">
+    <call>os.path.abspath(filename)</call>
+    <endesc>
+      return absolute pathname of file given as argument
+    </endesc>
+    <dedesc>
+      liefere absoluten Pfad der Datei, die als Argument "ubergeben wird
+    </dedesc>
+  </method>
+  <method name="path.dirname">
+    <call>os.path.dirname(filename)</call>
+    <endesc>
+      return directory of file given as argument
+    </endesc>
+    <dedesc>
+      liefere Verzeichnis der Datei, die als Argument "ubergeben wird
+    </dedesc>
+  </method>
+  <method name="path.isfile">
+    <call>os.path.isfile(pathname)</call>
+    <endesc>
+      return True iff file with pathname is an existing regular file
+    </endesc>
+    <dedesc>
+      liefere True gdw Datei mit pathname ist eine existierende regulaere Datei
+    </dedesc>
+  </method>
+  <method name="path.isdir">
+    <call>os.path.isdir(pathname)</call>
+    <endesc>
+      return True iff pathname is an existing directory
+    </endesc>
+    <dedesc>
+      liefere True gdw pathname ist ein existierendes Verzeichnis
+    </dedesc>
+  </method>
+  <method name="listdir">
+    <call>os.listdir(path)</call>
+    <endesc>
+      Return a list containing the names of the entries in the directory given
+      by path. The list is in arbitrary order, and does not include the
+      special entries '.' and '..'.
+    </endesc>
+    <dedesc>
+      Liefere eine Liste aller Namen von Eintraegen im Verzeichnis, das durch
+      path gegeben ist. Die Reihenfolge der Liste ist unbestimmt und schliesst
+      . und .. nicht ein.
+    </dedesc>
+  </method>
+
+  <method name="path.getsize">
+    <call>os.path.getsize(pathname)</call>
+    <endesc>
+      return size of file in bytes
+    </endesc>
+    <dedesc>
+      liefere Gr"osse der angegebenen Datei in bytes
+    </dedesc>
+  </method>
+
+  <method name="path.getctime">
+    <call>os.path.getctime(pathname)</call>
+    <endesc>
+      return timepoint when file with given name was created. This
+      is expressed as the number of seconds since the beginning of the epoch.
+    </endesc>
+    <dedesc>
+      liefere Zeitpunkt an dem die Datei mit dem gegebenen Namen erzeugt
+      wurde. Dies wird durch die Anzahl der Sekunden seit Beginn der Epoche
+      ausgedr"uckt.
+    </dedesc>
+  </method>
+
+  <method name="getcwd">
+    <call>os.getcwd()</call>
+    <endesc>
+      return current working directory
+    </endesc>
+    <dedesc>
+      liefert aktuelles Arbeitsverzeichnis
+    </dedesc>
+  </method>
+
+</class>
+<class name="subprocess">
+  <method name="subprocess.Popen">
+    <call>
+      # out_lines are the lines delivered by other program or read from file
+      # in case no input is to be supplied, leave out the following line
+      converted_input = '\n'.join(out_lines)
+      cmd_line = 'aspell --mode=tex -d {} {} list'.format(dictionary,personal)
+      cmd_args = shlex.split(cmd_line)
+      thispipe = subprocess.Popen(cmd_args,
+                                  stdin=subprocess.PIPE,
+                                  stdout=subprocess.PIPE)
+      # fill pipe to aspell with converted_input.encode()
+      # omit argument if nothing is to be supplied
+      out, _ = thispipe.communicate(converted_input.encode())
+      word = str()
+      word_list = list() # split output into list of words
+      for cc in out.decode():
+        if cc == '\n':
+          word_list.append(word)
+          word = ''
+        else:
+          word += cc
+    </call>
+    <endesc>
+      create pipe for subprocess reading from the pipe and process
+      output of subprocess
+    </endesc>
+    <dedesc>
+      erzeuge Pipe f"ur Subprozess, der aus der Pipe liest und prozessiere
+      Ausgabe des Subprozesses
+    </dedesc>
+  </method>
+  <method name="subprocess.run">
+    <call>subprocess.run(['ls','-l'])</call>
+    <endesc>
+      run the shell command \lstinline[language=shell]!ls -l!. In general
+      all commands, optionally with arguments, can be executed from a python
+      program. The commands and its arguments are provided as a list of strings.
+    </endesc>
+    <dedesc>
+      F"uhre das Shell Kommando \lstinline[language=shell]!ls -l! aus. I.A.
+      kann man alle Komandos, optional mit Argumenten in einen Python Programm
+      aufrufen. Die Kommandos und ihre Argumente werden als Liste von
+      Strings spezifiziert.
+    </dedesc>
+  </method>
+</class>
+<class name="numpycreate">
+  <method name="createonedim">
+    <call>np.array([1,2])</call>
+    <endesc>
+    create a 1-dim array
+    </endesc>
+    <dedesc>
+    erzeuge 1-dim.\ Array mit zwei Elementen 1 und 2
+    </dedesc>
+  </method>
+  <method name="createtwodim">
+    <call>np.array([[1,2],[3,4]])</call>
+    <endesc>
+    create a 2-dim array (matrix)
+    </endesc>
+    <dedesc>
+    erzeuge 2-dim Array (Matrix)
+       \(\left(\begin{array}{cc}
+                        1&amp;2\\
+                        3&amp;4\\
+                     \end{array}\right)\)
+    </dedesc>
+  </method>
+  <method name="arange">
+    <call>np.arange(n)</call>
+    <endesc>
+      create 1-dim \lstinline!int!-array with elements
+      \lstinline!0!, \lstinline!1!, \ldots, \lstinline!n-1!
+    </endesc>
+    <dedesc>
+      erzeuge 1-dim \lstinline!int!-Array mit den Elementen
+      \lstinline!0!, \lstinline!1!, \ldots, \lstinline!n-1!
+    </dedesc>
+  </method>
+  <method name="linspace">
+    <call>np.linspace(i,j,k)</call>
+    <endesc>
+      create 1-dim \lstinline!float!-array with \lstinline!k! elements
+      evenly spread on the interval from \lstinline!i! to \lstinline!j!
+    </endesc>
+    <dedesc>
+      erzeuge 1-dim \lstinline!float!-Array mit \lstinline!k! Elementen, die
+      gleichm"a"sig "uber das Intervall von \lstinline!i! bis \lstinline!j!
+      verteilt sind
+    </dedesc>
+  </method>
+  <method name="ones">
+    <call>np.ones((r,c))</call>
+    <endesc>
+      create 2-dim \lstinline!float!-array with \lstinline!r! rows and
+      \lstinline!c! columns, initialized to 1.0
+    </endesc>
+    <dedesc>
+      erzeuge 2-dim \lstinline!float!-Array mit \lstinline!r! Zeilen and
+      \lstinline!c! Spalten, initialisiert mit 1.0
+    </dedesc>
+  </method>
+  <method name="zeros">
+    <call>np.zeros((r,c),dtype=np.uint32)</call>
+    <endesc>
+      create 2-dim \lstinline!int!-array with \lstinline!r! rows and
+      \lstinline!c! columns, initialized to 0. Base type is 32 bit unsigned
+      integer
+    </endesc>
+    <dedesc>
+      erzeuge 2-dim \lstinline!int!-Array mit \lstinline!r! Zeilen and
+      \lstinline!c! Spalten, initialisiert mit 0. Basistyp ist 32 bit
+      vorzeichenloser Integer
+    </dedesc>
+  </method>
+  <method name="eye">
+    <call>np.eye(r)</call>
+    <endesc>
+      create 2-dim \lstinline!float!-array with \lstinline!r! rows and
+      columns; main diagonal is 1, other are 0
+    </endesc>
+    <dedesc>
+      erzeuge 2-dim \lstinline!float!-Array mit \lstinline!r! Zeilen und
+      Spalten; Hauptdiagonale ist 1, andere 0
+    </dedesc>
+  </method>
+  <method name="diag">
+    <call>np.diag(md)</call>
+    <endesc>
+      create 2-dim array; main-diagonal consists of values in
+      \lstinline!md!; other values are 0
+    </endesc>
+    <dedesc>
+      erzeuge 2-dim Array; Hauptdiagonale besteht aus Werten in
+      \lstinline!md!; andere Werte sind 0
+    </dedesc>
+  </method>
+  <method name="update">
+    <call>m[i,j] = v</call>
+    <endesc>
+      update matrix-value of row \lstinline!i! and column \lstinline!j! to
+      \lstinline!v!
+    </endesc>
+    <dedesc>
+      "uberschreibe Matrix-Wert in Zeile \lstinline!i! und Spalte
+      \lstinline!j! mit \lstinline!v!
+    </dedesc>
+  </method>
+  <method name="delete">
+    <call>np.delete(source,obj=j,axis=i)</call>
+    <endesc>
+      in matrix \lstinline!source! delete object number \lstinline!j! on axis
+      \lstinline!i!; \lstinline!i=1! \(\Rightarrow\) columns,
+      \lstinline!i=0! \(\Rightarrow\) rows
+    </endesc>
+    <dedesc>
+    </dedesc>
+  </method>
+  <method name="tile">
+    <call>np.tile(rep,n)</call>
+    <endesc>
+      create \lstinline!n! copies of \lstinline!rep!
+    </endesc>
+    <dedesc>
+      erzeuge \lstinline!n! Kopien von \lstinline!rep!
+    </dedesc>
+  </method>
+</class>
+<class name="numpyaccess">
+  <method name="dtype">
+    <call>m.dtype</call>
+    <endesc>
+      obtain base type
+    </endesc>
+    <dedesc>
+      liefert Basistyp von \lstinline!m!
+    </dedesc>
+  </method>
+  <method name="ndim">
+    <call>m.ndim</call>
+    <endesc>
+      obtain number of dimensions
+    </endesc>
+    <dedesc>
+      liefert Anzahl der Dimensionen von \lstinline!m!
+    </dedesc>
+  </method>
+  <method name="shape">
+    <call>m.shape</call>
+    <endesc>
+      obtain tuple of array dimensions
+    </endesc>
+    <dedesc>
+      liefert Tupel der Array-Dimensionen von \lstinline!m!
+    </dedesc>
+  </method>
+  <method name="len">
+    <call>len(m)</call>
+    <endesc>
+      obtain size of first dimension of array
+    </endesc>
+    <dedesc>
+      liefert Gr"o"se der ersten Dimension des Arrays \lstinline!m!
+    </dedesc>
+  </method>
+  <method name="resize">
+    <call>m.resize((r,c))</call>
+    <endesc>
+      resize array \lstinline!m! to hold \lstinline!r! rows and \lstinline!c!
+      columns; previous values are maintained;
+      additional elements are initialized to 0; if \lstinline!m! is a 1-dim
+      array, then omit \lstinline!c!
+    </endesc>
+    <dedesc>
+      passe die Gr"osse von \lstinline!m! an, so dass es \lstinline!r! Zeilen
+      und \lstinline!c! Spalten enth"alt;
+      bisherige Werte am Anfang bleiben erhalten; neue Eintr"age werden mit 0
+      initialisiert; falls \lstinline!m! eindimensional ist, dann wird
+      \lstinline!c! weggelassen
+    </dedesc>
+  </method>
+  <method name="scalaradd">
+    <call>a + 1</call>
+    <endesc>
+      add 1 to each entry of array \lstinline!a!
+    </endesc>
+    <dedesc>
+      addiere 1 zu jedem Eintrag des Arrays \lstinline!a!
+    </dedesc>
+  </method>
+  <method name="scalarexp">
+    <call>2 ** a</call>
+    <endesc>
+      use the values from array \lstinline!a! as exponents of 2 and create
+      corresponding list which has same length as \lstinline!a!
+    </endesc>
+    <dedesc>
+      verwende die Werte aus Array \lstinline!a! als Exponenten von
+      2 und erzeuge eine entsprechende Liste von der gleichen L"ange wie
+      \lstinline!a!
+    </dedesc>
+  </method>
+  <method name="matrixadd">
+    <call>mat1 + mat2</call>
+    <endesc>
+      add corresponding elements from \lstinline!mat1! and
+      \lstinline!mat2!, provided both matrices have the same number of
+      rows and columns; return result of addition;
+      works for \lstinline!-! and \lstinline!*! in analogous way
+    </endesc>
+    <dedesc>
+      addiere korrespondierende Elemente von \lstinline!mat1! und
+      \lstinline!mat2!, vorrausgesetzt, beide Matrizen  haben die
+      gleiche Anzahl von Zeilen und Spalten; Liefere Resultate der
+      Addition; funktioniert auf analoge Art
+      f"ur \lstinline!-! und \lstinline!*!
+    </dedesc>
+  </method>
+</class>
+<class name="numpyaccess_advanced">
+  <method name="matrixdot">
+    <call>mat1.dot(mat2)</call>
+    <endesc>
+      return product of matrix \lstinline!mat1! and matrix \lstinline!mat2!
+    </endesc>
+    <dedesc>
+      liefere Produkt von Matrix \lstinline!mat1! und Matrix \lstinline!mat2!
+    </dedesc>
+  </method>
+  <method name="matrixtranspose">
+    <call>mat.T</call>
+    <endesc>
+      return transposed version of matrix \lstinline!mat!
+    </endesc>
+    <dedesc>
+      liefere transponierte Version von Matrix \lstinline!mat!
+    </dedesc>
+  </method>
+  <method name="matrixsum">
+    <call>sum(mat,axis=i)</call>
+    <endesc>
+      return sum of matrix-values on axis \lstinline!i!; \lstinline!i=1! for
+      rows; \lstinline!i=0! for columns
+    </endesc>
+    <dedesc>
+      liefere Summe der Matrix-Werte auf Achse \lstinline!i!;
+      \lstinline!i=1! f"ur Zeilen; \lstinline!i=0! f"ur Spalten
+    </dedesc>
+  </method>
+
+  <method name="arraymax">
+    <call>max(arr)</call>
+    <endesc>
+      return maximum value of array \lstinline!arr!
+    </endesc>
+    <dedesc>
+      liefere maximum-Wert in Array \lstinline!arr!
+    </dedesc>
+  </method>
+  <method name="arraymean">
+    <call>mean(arr)</call>
+    <endesc>
+      return mean value of elements in array \lstinline!arr!
+    </endesc>
+    <dedesc>
+      liefere Durchschnitts-Wert der Elemente in Array \lstinline!arr!
+    </dedesc>
+  </method>
+  <method name="arraymedian">
+    <call>median(arr)</call>
+    <endesc>
+      return median value of elements in array \lstinline!arr!
+    </endesc>
+    <dedesc>
+      liefere Median der Elemente in Array \lstinline!arr!
+    </dedesc>
+  </method>
+  <method name="arraystd">
+    <call>std(arr)</call>
+    <endesc>
+      return standard deviation of elements in array \lstinline!arr!
+    </endesc>
+    <dedesc>
+      liefere Standardabweichung der Elemente in Array \lstinline!arr!
+    </dedesc>
+  </method>
+  <method name="set_printoptions">
+    <call>np.set_printoptions(threshold=sys.maxsize)</call>
+    <endesc>
+      print complete numpy matrix, not just a sample
+    </endesc>
+    <dedesc>
+      zeige die komplette Numpy-matrix, nicht nur einen Ausschnitt
+    </dedesc>
+  </method>
+</class>
+<class name="utils">
+  <method name="mkstemp">
+    <call>
+       fd, this_path = tempfile.mkstemp(suffix='.docx',prefix=None, dir=None, text=False)
+       with open(this_path, 'w') as out_stream:
+         out_stream.write('TEST\n')
+    </call>
+    <endesc>
+       create temporary file
+    </endesc>
+    <dedesc>
+       erzeuge tempor"are Datei
+    </dedesc>
+  </method>
+  <method name="unique_filename">
+    <call>
+      import uuid
+      def unique_identifier(size):
+        return uuid.uuid4().hex[0:size]
+    </call>
+    <endesc>
+      return a unique identifier (hexcode) of given length
+    </endesc>
+    <dedesc>
+      liefere einen eindeutigen Bezeichner (hexadezimalcode) der
+      gegebenen L"ange
+    </dedesc>
+  </method>
+  <method name="loadtxt">
+    <call>
+      population = np.loadtxt('Math/population.tsv')
+    </call>
+    <endesc>
+      read tab separated input file and return a numpy matrix
+    </endesc>
+    <dedesc>
+      lese tab-separierte Eingabedatei und liefer eine Numpy-Matrix zur"uck
+    </dedesc>
+  </method>
+  <method name="precision">
+    <call>
+      prc = '{:.' + str(precision) + 'f}'
+      print(prc.format(self._distance_matrix[i,j]))
+    </call>
+    <endesc>
+      format with precision according to value of variable precision
+    </endesc>
+    <dedesc>
+      formatiere mit Genauigkeit entsprechend der Variable precision
+    </dedesc>
+  </method>
+  <method name="defaultdict">
+    <call>
+      from collections import defaultdict
+      mydict = defaultdict(int)
+    </call>
+    <endesc>
+      create dictionary with default value according to given class.
+      As 0 is default value for int, the dictionary entries are initialized
+      to zero before the first use
+    </endesc>
+    <dedesc>
+      erzeuge dictionary mit Default Wert fuer die Initialisierung
+    </dedesc>
+  </method>
+  <method name="sort_in_place">
+    <call>l.sort()</call>
+    <endesc>
+      sort list \lstinline!l! in-place, i.e.\ the original list is modified
+    </endesc>
+    <dedesc>
+      sortiere Liste \lstinline!l! in-place, d.h. die original liste wird
+      modifizert
+    </dedesc>
+  </method>
+  <method name="sorted_int_list">
+    <call>sorted([5,2,6,1],reverse=True)</call>
+    <endesc>
+      sort integer list, possibly in reverse order
+    </endesc>
+    <dedesc>
+      sortiere Liste von ganzen Zahlen
+    </dedesc>
+  </method>
+  <method name="sorted_dict">
+    <call>sorted({1: 'D', 2: 'B', 3: 'B', 4: 'E', 5: 'A'})</call>
+    <endesc>
+      sort dictionary by keys and return keys
+    </endesc>
+    <dedesc>
+      sortiere Dictionary nach Schl"usseln und liefere diese
+    </dedesc>
+  </method>
+  <method name="sorted_by_key">
+    <call>sorted('My name is Nadja'.split(),key=str.lower)</call>
+    <endesc>
+      sort list of strings; comparison is based on keys transformed by
+      method specified with \lstinline!key=!
+    </endesc>
+    <dedesc>
+      sortiere Liste von Strings; Vergleich basiert auf Schl"usseln, die
+      durch die Methode geliefert werden, die durch \lstinline!key=!
+      spezifiziert wird
+    </dedesc>
+  </method>
+  <method name="sorted_by_itemgetter">
+    <call>sorted(tuples,key=itemgetter(2))</call>
+    <endesc>
+      from operator import itemgetter
+      sort list of tuples according to component at index 2,
+      add \lstinline!from operator import itemgetter!
+    </endesc>
+    <dedesc>
+      sortiere Liste von Tupeln ensprechend der Komponente an Index 2
+    </dedesc>
+  </method>
+  <method name="sorted_by_attrgetter">
+    <call>from operator import attrgetter
+          sorted(objects,key=attrgetter('grade','age'))
+    </call>
+    <endesc>
+      sort list of objects according to attribute grade (primary) and
+      age (secondary), add \lstinline!from operator import attrgetter!
+    </endesc>
+    <dedesc>
+      sortiere Liste von Objekten entsprechend der angegebenen Attribute
+    </dedesc>
+  </method>
+  <method name="sorted_by_lambda">
+    <call>sorted(mydict,key=lambda k: mydict[k])
+    </call>
+    <endesc>
+      sort list of objects according to function specified by lambda expression
+    </endesc>
+    <dedesc>
+      sortiere Dictionary von Objekten entsprechend der Funktion, die
+      als Lambda Ausdruck angegeben ist.
+    </dedesc>
+  </method>
+  <method name="open">
+    <call>try:
+            stream = open(filename)
+          except IOError as err:
+            sys.stderr.write('{}: {}\n'.format(sys.argv[0],err))
+          exit(1)</call>
+    <endesc>
+      open file stream in try/except block
+    </endesc>
+    <dedesc>
+      "Offne stream mit try/except
+    </dedesc>
+  </method>
+  <method name="herescript">
+    <call>print('''\\begin{{itemize}} {var}
+\\end{{itemize}}'''.format(var='somestring'))
+    </call>
+    <endesc>
+      write string over several lines with possible substitutions
+    </endesc>
+    <dedesc>
+      schreibe string "uber mehrere Zeilen
+    </dedesc>
+  </method>
+  <method name="upper">
+    <call>s.upper()</call>
+    <endesc>
+      return copy of s in upper case
+    </endesc>
+    <dedesc>
+      liefere Kopie von s in Gro"schreibung
+    </dedesc>
+  </method>
+  <method name="lower">
+    <call>s.lower()</call>
+    <endesc>
+      return copy of s in lower case
+    </endesc>
+    <dedesc>
+      liefere Kopie von s in Kleinschreibung
+    </dedesc>
+  </method>
+  <method name="argparse">
+    <call>
+import argparse
+def parse_command_line(argv):
+  p = argparse.ArgumentParser(description='plot statistics of Genbank size')
+  p.add_argument('-g','--german',action='store_true',default=False,
+                  help='show descriptions in german')
+  p.add_argument('classes',nargs='+',default=None,
+                  help='specify classes for which output is generated')
+  p.add_argument('-s','--sep',type=str,default='\t',
+                  help='specify column separator, default is Tab')
+  p.add_argument('foo', type=int, choices=range(5, 10))
+  inputgroup = p.add_mutually_exclusive_group(required=True)
+  inputgroup.add_argument('-i','--int',type=int,default=0,
+                          help='specify integer, default is 0')
+  inputgroup.add_argument('-f','--float',type=float,default=0.0,
+                          help='specify float, default is 0')
+  p.add_argument('inputfile',type=str,
+                  help='specify input file, means stdin')
+  p.add_argument('inputfiles',nargs='+',
+                  help='specify input files, - means stdin')
+  args = p.parse_args(argv)
+  if (not args.plot is None) and not args.plot[0] in ['cases','deaths']:
+    raise argparse.ArgumentTypeError(('first argument of option --plot must '
+                                      'be cases or deaths'))
+  return args
+    </call>
+    <endesc>
+      specify option parser
+    </endesc>
+    <dedesc>
+      Optionsparser
+    </dedesc>
+   </method>
+   <method name="comprehension">
+     <call>
+      tab = [[None] * (n+1) for i in range(m+1)]
+      </call>
+     <endesc>
+       create (m+1)\times (n+1)-matrix, each entry initialized with
+       \lstinline!None!
+     </endesc>
+     <dedesc>
+       erzeuge (m+1)\times (n+1)-Matrix, in der jeder Eintrag mit
+       \lstinline!None! initialisiert ist
+     </dedesc>
+   </method>
+   <method name="reverse">
+     <call>
+      reversed(l)
+      </call>
+     <endesc>
+       return iterator which delivers the list elements in reverse order
+     </endesc>
+     <dedesc>
+       return Iterator, der die Listenelement in umgekehrter Reihenfolge liefert
+     </dedesc>
+   </method>
+   <method name="random">
+     <call>
+      random.random()
+      </call>
+     <endesc>
+       deliver random floating point value in range [0.0,1.0)
+     </endesc>
+     <dedesc>
+       liefere Fliesskommazahl im Wertebereich [0.0,1.0)
+     </dedesc>
+   </method>
+   <method name="randint">
+     <call>
+      random.randint(lowerbound,upperbound)
+      </call>
+     <endesc>
+       deliver random integer in range from lowerbound to upperbound
+     </endesc>
+     <dedesc>
+       liefere zuf"allige ganze Zahl im Wertbereich von lowerbound bis
+       upperbound
+     </dedesc>
+   </method>
+   <method name="sample">
+     <call>
+      random.sample(population,k)
+      </call>
+     <endesc>
+       Return a k length list of unique elements chosen from the
+       population sequence or set.
+     </endesc>
+     <dedesc>
+       liefere zuf"allige Auswahl von k eindeutigen Elementen einer Liste oder
+       einer Menge population
+     </dedesc>
+   </method>
+   <method name="OrderedDict">
+      <call>
+      from collections import OrderedDict
+      od = OrderedDict()
+      </call>
+      <endesc>
+      return dictionary in which the order of inserted elements is preserved
+      </endesc>
+      <dedesc>
+      liefere dictionary in dem die Ordnung der eingef"ugten Elemente
+      erhalten bleibt
+      </dedesc>
+   </method>
+  <method name="RE.flags">
+      <call>
+      re.I|re.M|re.S
+      </call>
+      <endesc>
+       flags modifies semantics of pattern:
+       re.I: be case insensitive,
+       re.S: let . match any character including \n
+       re.M: let ^ additionally match after \n and $ match before \n
+      </endesc>
+      <dedesc>
+       optionales drittes Argument modifiziert Semantik des Musters:
+       re.I: match ohne Ber"ucksichtigung von Gross-/Kleinschreibung
+       re.S: . matcht alle Zeichen einschlie"slich \n
+       re.M: ^ match zus"atzlich nach \n and \$ match zus"atzlich vor \n
+      </dedesc>
+   </method>
+   <method name="isinstance">
+      <call>
+         isinstance(value,classname)
+      </call>
+      <endesc>
+         return \lstinline!True! iff \lstinline!value! is an instance of class
+         \lstinline!classname!
+      </endesc>
+      <dedesc>
+         liefere \lstinline!True! gdw \lstinline!value! ist eine Instanz
+         der Klasse \lstinline!classname!
+      </dedesc>
+   </method>
+   <method name="lineno">
+     <call>
+       from inspect import currentframe
+       def line_number_get():
+         cf = currentframe()
+         return cf.f_back.f_lineno
+     </call>
+      <endesc>
+         return current line number in Python code
+      </endesc>
+      <dedesc>
+         liefere die aktuelle Zeilennummer im Python code
+      </dedesc>
+  </method>
+</class>
+<class name="ModuleFinder">
+   <method name="finder.modules">
+   <call>
+        from modulefinder import ModuleFinder
+        finder = ModuleFinder()
+        finder.run_script("myscript.py")
+        for name, mod in finder.modules.items():
+          print(name)
+   </call>
+   <endesc>
+      extract list of used modules
+   </endesc>
+    <dedesc>
+      extrahiere die Liste der verwendeten Module
+    </dedesc>
+  </method>
+</class>
+<class name="plot">
+  <method name="matplotlib">
+    <call> import matplotlib.pyplot as plt </call>
+    <endesc> import of matplotlib </endesc>
+    <dedesc> import von matplotlib </dedesc>
+  </method>
+  <method name="continuous plot">
+    <call>
+    def plot(self):
+      x_list, y_list = self.data_lists()
+      fig, ax = plt.subplots()
+      ax.set_xlabel(self._key_name)
+      ax.set_ylabel(self._value_name.split()[0])
+      ax.set_title('{}, {}-{}'.format(self._value_name,
+      self._firstyear,self._lastyear))
+      ax.grid(True)
+      ax.plot(x_list,y_list)
+      ax.legend(['leg1'],loc='upper left')
+      fig.savefig('temp_plot.pdf')  # save figure as pdf file
+    </call>
+    <endesc>
+      coninuous plot with grid
+    </endesc>
+    <dedesc>
+      kontunuierlicher Plot mit Gitter
+    </dedesc>
+  </method>
+  <method name="scatter">
+    <call>
+    def scatter(self):
+      x_list, y_list = self.data_lists()
+      fig, ax = plt.subplots()
+      ax.set_xlabel(self._key_name)
+      ax.set_ylabel(self._value_name.split()[0])
+      ax.set_title('{}, {}-{}'.format(self._value_name,
+                                      self._firstyear,self._lastyear))
+      ax.grid(True)
+      ax.scatter(x_list,y_list,s=0.5,color='black')
+      fig.savefig('temp_scatter.pdf')  # save figure as pdf file
+    </call>
+    <endesc>
+      scatter plot with grid
+    </endesc>
+    <dedesc>
+      Scatter plit mit Gitter
+    </dedesc>
+  </method>
+  <method name="histogram">
+    <call>
+    def histogram(self):
+      def temp_bound(t):
+        return math.ceil(t) if t > 0.0 else math.floor(t)
+      _, value_list = self.data_lists()
+      min_value = temp_bound(min(value_list))
+      max_value = temp_bound(max(value_list))
+      num_bins = max_value - min_value + 1
+      fig, ax = plt.subplots()
+      ax.set_xlabel(self._value_name)
+      ax.set_ylabel('number of events')
+      ax.set_title('histogram of {}, {}-{}'
+                   .format(self._value_name,self._firstyear,
+                   self._lastyear))
+      ax.grid(True)
+      ax.hist(value_list,bins=num_bins)
+      fig.savefig('temp_hist.pdf')  # save figure as pdf file
+    </call>
+    <endesc>
+      histogram with grid
+    </endesc>
+    <dedesc>
+      Histogram mit Gitter
+    </dedesc>
+  </method>
+  <method name="boxplot">
+    <call>
+    def boxplot(self):
+      groups = self.groupby_year()
+      fig, ax = plt.subplots()
+      ax.set_title('{}, {}-{}'
+                   .format(self._value_name,min(groups.keys()),
+                                            max(groups.keys())))
+      ax.set_xlabel('year')
+      ax.set_ylabel(self._value_name.split()[0])
+      ax.boxplot(groups.values(),labels=groups.keys())
+      fig.savefig('temp_boxplot.pdf')  # save figure as pdf file
+    </call>
+    <endesc>
+      Box and Whisker Plot
+    </endesc>
+    <dedesc>
+      Box and Whisker Plot
+    </dedesc>
+  </method>
+  <method name="violinplot">
+    <call>
+  def violinplot(self):
+    groups = self.groupby_year()
+    fig, ax = plt.subplots()
+    ax.set_title('{}, {}-{}'
+                 .format(self._value_name,min(groups.keys()),
+                                          max(groups.keys())))
+    ax.set_xlabel('year')
+    ax.set_ylabel(self._value_name.split()[0])
+    ax.violinplot(groups.values(),showmedians=True)
+    keys = list(groups.keys())
+    ax.set_xticks(list(range(1,len(keys)+1)))
+    ax.set_xticklabels(keys)
+    fig.savefig('temp_violinplot.pdf')  # save figure as pdf file
+    </call>
+    <endesc>
+      Violin Plot
+    </endesc>
+    <dedesc>
+      Violinen Plot
+    </dedesc>
+  </method>
+  <method name="subplot">
+    <call>
+    def subplot(self):
+      groups = self.groupby_year()
+      rows = len(groups)
+      fig, ax = plt.subplots(rows,1)
+      ax[0].set_title('{}, {}-{}'.format(self._value_name,
+                                         min(groups.keys()),
+                                         max(groups.keys())))
+      ax[rows-1].set_xticks([1] + list(range(25,365,25)))
+      for idx, year in enumerate(groups.keys()):
+        ax[idx].set_ylabel('{}'.format(year),fontsize=9)
+        ax[idx].plot(groups[year])
+      fig.savefig('temp_subplot.pdf')  #
+    </call>
+    <endesc>
+      Subplot
+    </endesc>
+    <dedesc>
+      Teilplot
+    </dedesc>
+  </method>
+  <method name="logscale">
+    <call>
+      ax.set_yscale('log')
+    </call>
+    <endesc>
+      use logorithmic scale on X-axes
+    </endesc>
+    <dedesc>
+      verwende logorithmische Skalierung auf X-Achse
+    </dedesc>
+  </method>
+  <method name="limits">
+    <call>
+      ax.set_xlim(x_min,x_max)
+    </call>
+    <endesc>
+      limit the values on the X-axes appearing in the plot
+    </endesc>
+    <dedesc>
+      zeige nur Werte im genannten Wertebereich auf der X-Achse
+    </dedesc>
+  </method>
+</class>
+<class name="BeautifulSoup">
+  <method name="create">
+    <call>
+      soup = BeautifulSoup(data_html,features='html.parser')
+    </call>
+    <endesc>
+      parse HTML tree from string \lstinline!data_html! using
+      the given parser
+    </endesc>
+    <dedesc>
+      extrahiere HTML Baum aus dem String \lstinline!data_html! mit
+      dem angegebenen Parser
+    </dedesc>
+  </method>
+</class>
+<class name="XML">
+  <method name="parse">
+    <call>
+      import xml.etree.ElementTree as ET
+      xml_tree = ET.parse('Record.xml')
+      root = xml_tree.getroot()
+    </call>
+    <endesc>
+       parse XML document with given name
+       and obtain the root node
+    </endesc>
+    <dedesc>
+       parsing des XML-Baums, Extraktion des Wurzelknotens
+    </dedesc>
+  </method>
+  <method name="tag">
+    <call>
+      xmltreenode.tag
+    </call>
+    <endesc>
+       obtain tag of node in XML tree
+    </endesc>
+    <dedesc>
+       extrahiere tag eines Knotens im XML Baum
+    </dedesc>
+  </method>
+  <method name="text">
+    <call>
+      xmltreenode.text
+    </call>
+    <endesc>
+       obtain text of node in XML tree
+    </endesc>
+    <dedesc>
+       extrahiere text eines Knotens im XML Baum
+    </dedesc>
+  </method>
+  <method name="attrib">
+    <call>
+      xmltreenode.attrib
+    </call>
+    <endesc>
+       obtain dictionary of attribute/value pairs of node in XML tree
+    </endesc>
+    <dedesc>
+       extrahiere Dictionary von Attribut/Werte Paaren eines eines Knotens im
+       XML Baum
+    </dedesc>
+   </method>
+  <method name="subtree">
+    <call>
+      for child in node:
+        process(child)
+    </call>
+    <endesc>
+       iterate obtain children of node in XML tree
+    </endesc>
+    <dedesc>
+       iteriere "uber alle Kindknoten eines Knotens im XML Baum
+    </dedesc>
+   </method>
+</class>
+<class name="Shutil">
+  <method name="which">
+    <call> shutil.which(program)
+    </call>
+    <endesc>
+       return True if given program is in PATH
+    </endesc>
+    <dedesc>
+       liefert True falls das genannte Program im Pfad ist
+    </dedesc>
+  </method>
+  <method name="copyfile">
+    <call> shutil.copyfile(src,dest)
+    </call>
+    <endesc>
+       copy file named src in file named dest
+    </endesc>
+    <dedesc>
+       kopiere Datei mit dem Namen src unter dem Namen dest
+    </dedesc>
+  </method>
+</class>
+<class name="Matchobject">
+  <method name="group">
+    <call> mo.group(i)
+    </call>
+    <endesc>
+       return matching string of i-th group of match object mo
+    </endesc>
+    <dedesc>
+       liefere den matchenden String der i-ten Gruppe im Match Object mo
+    </dedesc>
+  </method>
+  <method name="start">
+    <call> mo.start()
+    </call>
+    <endesc>
+       return start position for match object mo
+    </endesc>
+    <dedesc>
+       liefere die Start Position eines Treffers f"ur ein Matchobjekt mo.
+    </dedesc>
+  </method>
+</class>
+<class name="pandas">
+  <method name="read_excel">
+    <call> import pandas as pd
+           data = pd.read_excel(inputfile)
+           df = pd.DataFrame(data)
+           d = df.to_dict()
+    </call>
+    <endesc>
+       read excel sheet and store it as dictionary
+    </endesc>
+    <dedesc>
+       lese Excel sheet und speichere es als dictionary
+    </dedesc>
+  </method>
+  <method name="read_csv">
+    <call> import pandas as pd
+           data = pd.read_csv(inputfile,sep='\t', squeeze=True, index_col=0)
+           df = pd.DataFrame(data)
+           d = df.to_dict()
+    </call>
+    <endesc>
+       read csv file and store it as dictionary
+    </endesc>
+    <dedesc>
+       lese csv Datei und speichere sie als dictionary
+    </dedesc>
+  </method>
+</class>
+<class name="math">
+  <method name="isnan">
+    <call> import math
+           x = float('nan')
+           if math.isnan(x):
+             ...
+    </call>
+    <endesc>
+       test if value is not a number (NaN)
+    </endesc>
+    <dedesc>
+       Teste ob eine Wert eine undefinierte Zahl ist (NaN)
+    </dedesc>
+  </method>
+</class>
+<class name="datetime">
+  <method name="datetime.now">
+    <call> import datetime
+           now = datetime.datetime.now()
+           print('{}-{}-{}'.format(now.year,now.month,now.day))
+    </call>
+    <endesc>
+       return current date and time
+    </endesc>
+    <dedesc>
+       liefere aktuellen Zeitpunkt und Datum
+    </dedesc>
+  </method>
+</class>
+<class name="time">
+  <method name="time.ctime">
+    <call> import time
+           print('{}'.format(time.ctime(1223412410)))
+    </call>
+    <endesc>
+    Convert a time expressed in seconds since the epoch to a string of a
+    form: 'Tue Oct  7 22:46:50 2008'.
+    </endesc>
+    <dedesc>
+    Konvertiere einen Zeitpunkt, ausdr"uckt als Anzahl der Sekunden seit Beginn
+    der Epochen einen String der Form: 'Tue Oct  7 22:46:50 2008'.
+    </dedesc>
+  </method>
+</class>
+<class name="overloading">
+  <method name="__len__">
+    <call>
+      def __len__(self):
+        return len(self._values)
+      v = Classname([1,2,3,4])
+      print(len(v))
+    </call>
+    <endesc>
+    Overload the method \lstinline!len! and deliver the number of elements
+    in the instance.
+    </endesc>
+    <dedesc>
+    "Uberlade die Methode \lstinline!len! und liefere die Anzahl der Elemente
+    der Instanz.
+    </dedesc>
+  </method>
+  <method name="__getitem__">
+    <call>
+      def __getitem__(self,idx):
+        return self._values[idx]
+      v = Classname([1,2,3,4])
+      print(v[2])
+    </call>
+    <endesc>
+    Overload the index access operator \lstinline![]!
+    allowing e.g. to extract an element
+    from a list which is stored in an instance variable, whose name should
+    be hidden from the user of the class.
+    </endesc>
+    <dedesc>
+    "Uberlade den Indexzugriffs Operator \lstinline![]!
+    um z.B. ein Element aus einer Liste zu extrahieren, die in einer
+    Instanzvariable gespeichert ist, und deren Namen nicht nach
+    aussen bekannt gemacht werden soll.
+    </dedesc>
+  </method>
+  <method name="__iter__">
+    <call>
+      def __iter__(self):
+        return iter(self._values)
+      v = Classname([1,2,3,4])
+      for a in v:
+        print(a)
+    </call>
+    <endesc>
+    Deliver an iterator to a list stored in an instance variable
+    whose name should be hidden from the user of the class.
+    </endesc>
+    <dedesc>
+    Liefere einen Iterator f"ur eine Liste,
+    die in einer Instanzvariable gespeichert ist und deren Namen
+    nicht nach aussen bekannt gemacht werden soll.
+    </dedesc>
+  </method>
+  <method name="operators_vs_methods">
+    <call>
+      def __str__(self):
+        return some_string respresening values of instance variables
+    </call>
+    <endesc>
+    Overloaded Operators:
+         str	__str__
+         +	__add__
+         -	__sub__
+         *	__mult__
+         **	__pow__
+         /	__truediv__
+         //	__floordiv__
+	 %	__mod__
+         <![CDATA[<<]]>	__lshift__
+         <![CDATA[>>]]>	__rshift__
+         &amp;	__and__
+         |	__or__
+         ~	__invert__
+         ^	__xor__
+         <![CDATA[<]]>	__lt__
+         <![CDATA[<=]]>	__le__
+         ==	__eq__
+         !=  	__ne__
+         <![CDATA[>]]>	__gt__
+         <![CDATA[>=]]>	__ge__
+    </endesc>
+    <dedesc>
+      siehe englische Beschreibung
+    </dedesc>
+  </method>
+</class>
+<class name="filecmp">
+  <method name="filecmp.cmp">
+    <call>
+      ret = filecmp.cmp(f1, f2, False)
+    </call>
+    <endesc>
+     Compare the contents of files named f1 and f2, returning True if
+     they have the same content. Otherwise, False is returned.
+    </endesc>
+    <dedesc>
+     Vergleiche Dateien mit dem Namen f1 and f2. Liefere True,
+     falls die Dateien den gleichen Inhalt haben. Sonst liefere False.
+    </dedesc>
+  </method>
+</class>
+<class name="hashlib">
+  <method name="hashlib.md5">
+    <call>
+      hashlib.md5(bs).hexdigest()
+    </call>
+    <endesc>
+     Return the MD5 sum of the string \lstinline!bs!. This must be a string
+     in UTF8-Encoding. This can be computed from a file named
+     \lstinline!filename! by
+     stream = open(filename,'rb')
+     bs = stream.read().
+     The MD5-Sum of a string is a 128-bit Hash-Value of the string.
+    </endesc>
+    <dedesc>
+     Liefere die MD5-Summe des Strings \lstinline!bs!. Dieser muss ein
+     String in UTF-8 Codierung sein. Diese erh"alt man z.B.\ f"ur eine
+     Datei \lstinline!filename! durch
+     stream = open(filename,'rb')
+     bs = stream.read().
+     Die MD5-Summe eines Strings ist ein 128-bit Hash-Wert des String,
+     die durch den Message-Digest Algorithm 5 (MD5) berechnet wird.
+    </dedesc>
+  </method>
+</class>
+</classes>

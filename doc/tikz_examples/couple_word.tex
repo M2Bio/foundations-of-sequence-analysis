@@ -1,0 +1,22 @@
+\documentclass[12pt,a4paper]{scrartcl}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\newcommand{\Anchor}[2]{\tikz[baseline,inner sep=0]\node[anchor=base] (#1) {#2};}
+\usepackage{tikz}
+\tikzstyle{every picture}+=[remember picture]
+\begin{document}
+
+\begin{itemize}
+\item this sentence contains a word 
+\Anchor{target}{target}
+%\tikz[baseline,inner sep=0] \node[anchor=base] (n1) {target};
+\end{itemize}
+
+\bigskip
+
+\begin{itemize}
+\item the other sentence contains  a word 
+\Anchor{source}{source}
+\tikz[overlay]\draw[thick,->] (source.north) -- (target.south);
+\end{itemize}
+\end{document}
