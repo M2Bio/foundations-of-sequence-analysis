@@ -1,0 +1,61 @@
+\documentclass[12pt,a4paper]{scrartcl}
+\usepackage{times}
+\usepackage{amsmath}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\newcommand{\Set}[1]{\{#1\}}
+\newcommand{\Subchar}[2]{#1[#2]}
+\newcommand{\Gap}[0]{\mathtt{\symbol{45}}}
+\newcommand{\Substring}[3]{#1[#2\ldots#3]}
+\newcommand{\SPscorepw}{\delta}
+\newcommand{\EDtab}{E_{\delta}}
+\newcommand{\Minexpr}[0]{%
+      M(q_{1}-d_{1},q_{2}-d_{2})+colcost(\varphi(q_{1},d_{1}),%
+                                         \varphi(q_{2},d_{2}))}
+\begin{document}
+To exemplify the equation, let us partially evaluate it for \(k=2\).
+In the initial simplification step we obtain the following:
+\[
+\begin{array}{@{}l@{}l@{~}l@{}}
+M(q_{1},q_{2})
+=\min\{&M(q_{1}-d_{1},q_{2}-d_{2})+colcost(\varphi(q_{1},d_{1}),
+                                             \varphi(q_{2},d_{2}))\mid
+                     &(d_{1},d_{2})\in\Set{0,1}\times\Set{0,1},\\
+                    &&(d_{1},d_{2})\neq (0,0),\\
+                    &&q_{1}\geq d_{1},q_{2}\geq d_{2}\}
+\end{array}
+\]
+
+Now assume that \(q_{1}\geq 1\) and \(q_{2}\geq 1\). As \(d_{1}\leq 1\) and
+\(d_{2}\leq 1\), we can conclude \(q_{1}\geq d_{1}\) and \(q_{2}\geq d_{2}\).
+Then the right hand side simplifies to:
+\[
+\begin{array}{@{}l@{~}l@{~}l}
+=&\min&\{\Minexpr\mid (d_{1},d_{2})\in\Set{(1,0),(0,1),(1,1)}\}\\
+      =&\min&\{\Minexpr\mid (d_{1},d_{2})=(1,0)\}~\cup\\
+       &&\{\Minexpr\mid (d_{1},d_{2})=(0,1)\}~\cup\\
+       &&\{\Minexpr\mid (d_{1},d_{2})=(1,1)\}\\
+=&\min&\{M(q_{1}-1,q_{2}-0)+colcost(\varphi(q_{1},1),\varphi(q_{2},0))\}~\cup\\
+&&\{M(q_{1}-0,q_{2}-1)+colcost(\varphi(q_{1},0),\varphi(q_{2},1))\}~\cup\\
+&&\{M(q_{1}-1,q_{2}-1)+colcost(\varphi(q_{1},1),\varphi(q_{2},1))\}\\
+=&\min&\{M(q_{1}-1,q_{2})+colcost(\Subchar{s_{1}}{q_{1}},\Gap)\}~\cup\\
+&&\{M(q_{1},q_{2}-1)+colcost(\Gap,\Subchar{s_{2}}{q_{2}})\}~\cup\\
+&&\{M(q_{1}-1,q_{2}-1)+colcost(\Subchar{s_{1}}{q_{1}},\Subchar{s_{2}}{q_{2}})\}
+\end{array}
+\]
+
+Now assume \(q_{1}\geq 1\) and \(q_{2}=0\). Then
+\(q_{2}=0\geq d_{2}\) which implies \(d_{2}=0\). Hence \(d_{1}=1\leq q_{1}\) and
+one obtains the equation
+\begin{align*}
+M(q_{1},q_{2})&=\min\{M(q_{1}-d_{1},q_{2}-d_{2})+colcost(\Subchar{s_{1}}{q_{1}},\Gap)\mid
+(d_{1},d_{2})\in\{(1,0)\}\}\\
+&=M(q_{1}-1,q_{2})+colcost(\Subchar{s_{1}}{q_{1}},\Gap)
+\end{align*}
+
+Now assume \(q_{1}=0\) and \(q_{2}\geq 1\). In analogy to the previous case
+one obtains the equation
+\[M(q_{1},q_{2})=M(q_{1},q_{2}-1)+colcost(\Gap,\Subchar{s_{2}}{q_{2}})\]
+Finally, for \(q_{1}=0\) and \(q_{2}=0\) one obtains the equation
+\(M(q_{1},q_{2})=0\).
+\end{document}
