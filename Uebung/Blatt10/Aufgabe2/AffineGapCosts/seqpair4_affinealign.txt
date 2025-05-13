@@ -1,0 +1,8 @@
+# AffineEdist	seq4.0	seq4.1	14
+TTATAGTTTTCAATCTGTTTA
+|||||   |      |  |||
+TTATACAAT---CATTAATTA
+# AffineEdist	seq4.1	seq4.0	14
+TTATACAAT---CATTAATTA
+|||||   |      |  |||
+TTATAGTTTTCAATCTGTTTA

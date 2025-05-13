@@ -1,0 +1,8 @@
+# AffineEdist	seq2.0	seq2.1	21
+CAAAAAC--------TGAGGGGATCATGAA
+   ||||        | |     | |||||
+ACTAAACCAAACATATTATAACCTTATGAA
+# AffineEdist	seq2.1	seq2.0	21
+ACTAAACCAAACATATTATAACCTTATGAA
+   ||||        | |     | |||||
+CAAAAAC--------TGAGGGGATCATGAA

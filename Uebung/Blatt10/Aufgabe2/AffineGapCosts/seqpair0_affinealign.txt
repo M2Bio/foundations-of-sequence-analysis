@@ -1,0 +1,8 @@
+# AffineEdist	seq0.0	seq0.1	26
+CATACAAGGATAT----------------AAAAAAAAAAAAA
+| ||  ||  |||                |  ||||||||||
+CGTAACAGATTATTTAATCTGATCTTAAAATCAAAAAAAAAA
+# AffineEdist	seq0.1	seq0.0	26
+CGTAACAGATTATTTAATCTGATCTTAAAATCAAAAAAAAAA
+| ||  ||  |||                |  ||||||||||
+CATACAAGGATAT----------------AAAAAAAAAAAAA
